@@ -1,4 +1,5 @@
-<script>
-    import {env} from '$env/dynamic/private'
+<script lang="ts">
+    export let data;
+    const { word } = data;
 </script>
-<h1>The project worked so far. {env.SECRET_TEST_WORD}</h1>
+<h1>This project is called: {word}</h1>
